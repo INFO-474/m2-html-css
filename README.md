@@ -20,6 +20,7 @@ There are limitless resources on the web regarding web-programming (shocking), b
 - [w3shools Bootstrap Tutorial](http://www.w3schools.com/bootstrap/default.asp)
 - [Materialize Framework](http://materializecss.com/)
 - [Font Awesome icons](https://fortawesome.github.io/Font-Awesome/)
+
 ## HTML
 
 **H**yper**T**ext **M**arkup **L**anguage is a programming language for describing how to display web documents.  It uses `<tags>` to mark up plain text, and provide rendering instructions to a web-browser.  Even the most beautiful and complex data visualizations on the web are simply HTML elements arranged into what people perceive as charts, plots, and maps.
@@ -135,6 +136,7 @@ Manipulating these properties allows you to specify how your content should be a
 
 ![box-model](imgs/box-model.png)
 
+To practice your HTML and CSS skills, head over to [exercise-1](exercise-1).
 
 ### Frameworks
 Even for basic tasks, it makes sense to use a CSS framework to structure your code.  A CSS framework is a pre-written set of CSS files that apply styles to your elements.  They are particularly useful for making sites responsive based on screensize.  The most popular CSS framework on the web is [Bootstrap](http://getbootstrap.com/), which was developed by Twitter.  However, [Materialize](http://materializecss.com/) (by Google) appears to be gaining traction, and is a nice break from the ubiquity of default Bootstrap styles (you'll start to notice them everywhere once you use them).  To use a CSS framework, you simply read the file(s) into the `head` section of your `.html` file.  Note, some frameworks leverage `JavaScript` files for more advanced interactivity -- these are only required for certain elements (such as modals, which are like fancy dialog boxes) to render properly:
@@ -171,3 +173,5 @@ Here is the table from bootstrap which specifies the pixels associated with each
 ![bootstrap_table](imgs/bootstrap_table.png)
 
 For example, a div with class `.col-md-6` would take up 6 columns on a medium size screen.
+
+To practice your working with Bootstrap, head over to [exercise-2](exercise-2).
