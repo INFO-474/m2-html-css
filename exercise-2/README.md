@@ -1,4 +1,4 @@
-## Exercise 3: Bootstrap
+## Exercise 2: Bootstrap
 In this exercise, you'll practice leveraging common Bootstrap classes to build a mobile-first website. Because web-programming is a prerequisite to this course, we will not covering how to use these elements in great detail in class.  At this point, you should feel comfortable building modern looking mobile-first websites.   Here is what you are aiming for (desktop):
 
 ![desktop-view](imgs/desktop-view.png)
