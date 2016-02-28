@@ -1,0 +1,29 @@
+/* Main CSS file */
+
+/* Add styles to your lines so you can see them */
+line {
+  stroke:#d3d3d3;
+  stroke-width:1;
+}
+
+/* Manipulate the space between your h1 and p elements as you see fit */
+h1 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top:0px;
+  opacity:.5
+}
+
+/* Change the property of circle and rect elements that changes their color */
+circle, rect {
+  fill:lightblue;
+}
+
+/* Set with width of the div so it is centered */
+.container {
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+}
