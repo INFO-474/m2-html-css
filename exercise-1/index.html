@@ -4,60 +4,47 @@
 <meta name="description" content="HTML Exercise 1" />
   <meta charset="utf-8">
   <title>JS Bin</title>
+  <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise 1</title>
+  </head>
+  <body>
+    <!-- Container div for content-->
+    <div class='container'>
+      <!-- Use h1 and p elements to re-create the bar-chart text -->
+      <h1>This looks like a simple bar chart</h1>
+      <p>(but it really just consists of html <code>&ltrect&gt</code>) elements in an <code>&ltsvg&gt</code> element</p>
+        <!-- Make a container svg for "bar-chart" visual elements: make sure to set width/height attributes -->
+        <svg width = 300 height = 100>
+            <!-- Put in rect elements to represent the bars-->
+            <rect x=0 y=10 height=20 width=100></rect>
+            <rect x=0 y=40 height=20 width=200></rect>
+            <rect x=0 y=70 height=20 width=300></rect>
+            <!-- Include line elements that resemble like axes -->
+            <line x1="0" y1="95" x2="300" y2="95"></line>
+            <line x1="0" y1="0" x2="0" y2="345"></line>
+        </svg>
 
-<!-- Create a division of the page --> 
-
-<!-- In the division, create an ordered list with three list items -->
-
-
-  <!-- Close the division of the page -->
-
-  <!-- Create a division of the page -->
-
-  <!-- Create a scalable vector graphic with width and height attributes set to 200 -->
-
-
- <!-- Create a circle element that is:
-    - 20 pixels from the left of the SVG
-    -30 pixels from the top of the SVG
-    - Has a radius of 13
--->
-
-  <!-- Close the scalable vector graphic -->
-
-  <!-- Close the division of the page -->
-
-  <!-- Create a division of the page -->
-
-
-  <!-- Create a scalable vector graphic with width set to 300 and height set to 200 -->
-
-
-
-  <!-- Add a rectange element that is:
-    - 20 pixels from the left of the SVG
-    - 40 pixels from the top
-    - 10 pixels tall
-    - 100 pixels wide
-    - Has an id of "rect-1"
-  -->
-
-   <!-- Add a rectange element that is:
-    - 20 pixels from the left of the SVG
-    - 60 pixels from the top
-    - 20 pixels tall
-    - 100 pixels wide
-    - Has an id of "rect-2"
-    - Has a class of "shape"
-  -->
-
-
-    <!-- Close the scalable vector graphic -->
-
-  <!-- Close the division of the page -->
-
-
-</body>
+        <!-- Use h1 and p elements to re-create the scatter-plot text -->
+        <h1>And this looks like it could be a scatter-plot</h1>
+        <p>(but it really just consists of html <code>&ltcircle&gt</code>) elements in an <code>&ltsvg&gt</code> element</p>
+          <!-- Make a container svg for "scatter-plot" visual elements: make sure to set width/height attributes -->
+          <svg height=350 width=350>
+              <!-- Create circle elements that look like a scatter plot -->
+              <circle cx=50 cy=325 r=10></circle>
+              <circle cx=100 cy=300 r=15></circle>
+              <circle cx=150 cy=250 r=20></circle>
+              <circle cx=200 cy=200 r=25></circle>
+              <circle cx=250 cy=150 r=30></circle>
+              <circle cx=300 cy=100 r=35></circle>
+              <!-- Create line elements that resemble  axes -->
+              <line x1="0" y1="345" x2="345" y2="345"></line>
+              <line x1="0" y1="0" x2="0" y2="345"></line>
+          </svg>
+  </body>
 </html>
