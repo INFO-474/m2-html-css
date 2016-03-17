@@ -14,7 +14,6 @@ In this course, we'll be building interactive data visualizations _on the web_. 
 
   - [Resources](#resources)
   - [HTML](#html)
-- [My First Heading](#my-first-heading)
   - [CSS](#css)
     - [Selectors](#selectors)
     - [Arranging elements](#arranging-elements)
