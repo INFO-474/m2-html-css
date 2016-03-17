@@ -8,6 +8,21 @@ In this course, we'll be building interactive data visualizations _on the web_. 
 - Using Cascading Style Sheets to add styles to pages
 - Introduction of the Grid system with the CSS framework Bootstrap  
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Contents**
+
+  - [Resources](#resources)
+  - [HTML](#html)
+- [My First Heading](#my-first-heading)
+  - [CSS](#css)
+    - [Selectors](#selectors)
+    - [Arranging elements](#arranging-elements)
+    - [Frameworks](#frameworks)
+    - [The Grid](#the-grid)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Resources
 There are limitless resources on the web regarding web-programming (shocking), but here are a few to get you started:
 
