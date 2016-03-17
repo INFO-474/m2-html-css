@@ -13,6 +13,7 @@ There are limitless resources on the web regarding web-programming (shocking), b
 
 - [HTML5 General Reference](http://www.w3schools.com/tags/ref_byfunc.asp)
 - [HTML Attribute Reference](http://www.w3schools.com/tags/ref_standardattributes.asp)
+- [DOM Intro](http://www.w3schools.com/js/js_htmldom.asp)
 - [CSS Selector Reference](http://www.w3schools.com/cssref/css_selectors.asp)
 - [CSS Properties Reference](http://www.w3schools.com/cssref/default.asp)
 - [CSS Units Reference](http://www.w3schools.com/cssref/css_units.asp)
@@ -25,7 +26,9 @@ There are limitless resources on the web regarding web-programming (shocking), b
 
 **H**yper**T**ext **M**arkup **L**anguage is a programming language for describing how to display web documents.  It uses `<tags>` to mark up plain text, and provide rendering instructions to a web-browser.  Even the most beautiful and complex data visualizations on the web are simply HTML elements arranged into what people perceive as charts, plots, and maps.
 
-In an HTML document, you'll arrange different HTML elements into a tree structure which defines how your page is laid out.  For example, if you wanted two paragraph elements (`<p>`) inside of a division (`<div>`) or your page, it would look like this:
+In an HTML document, you'll arrange different HTML elements into a tree structure which defines how your page is laid out. Your web-browser will parse the HTML you write and create a visual representation of that information known as the **D**ocument **O**bject **M**odule, or **DOM**. The DOM expresses your content as a series of objects which you will later learn how to manipulate, add, and remove from your page.
+
+The tree structure that you create places elements inside of larger (containing) elements. For example, if you wanted two paragraph elements (`<p>`) inside of a division (`<div>`) or your page, it would look like this:
 
 ```html
 <div>
@@ -34,7 +37,18 @@ In an HTML document, you'll arrange different HTML elements into a tree structur
 </div>
 ```
 
-The visual element that you want to render fall in the `<body>` section of your page.  You may want to read in other files, or set certain properties of you page, which would happen in the `<head>` section of your `.html` file.  Here is an example file:
+In order to render visual tags such as `circle` or `rect` elements, we'll need to wrap them in a **Scalable Vector Graphic** tag (`<svg>`).  For example, you could render a circle:
+
+```html
+<!-- Create an svg element -->
+<svg width="100" height="100">
+
+  <!-- Render a circle element -->
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+```
+
+All visual element that you want to render fall in the `<body>` section of your page.  You may want to read in other files, or set certain properties of you page, which would happen in the `<head>` section of your `.html` file.  Here is an example file:
 
 ```html
 <!-- This is a comment: your browser will not interpret it -->
@@ -65,17 +79,9 @@ The visual element that you want to render fall in the `<body>` section of your 
   </body>
 </html>
 ```
+The following image from w3schools shows how the `<head>` and `<body>` sections both fall within the same tree structure of your DOM:
 
-In order to render visual tags such as `circle` or `rect` elements, we'll need to wrap them in a **Scalable Vector Graphic** tag (`<svg>`).  For example, you could render a circle:
-
-```html
-<!-- Create an svg element -->
-<svg width="100" height="100">
-
-  <!-- Render a circle element -->
-  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-</svg>
-```
+![DOM tree structure](imgs/w3_htmltree.gif)
 
 ## CSS
 
@@ -124,7 +130,7 @@ Elements naturally arrange themselves on the page based on the size of the eleme
 
 >**Inline-block elements**: permit multiple elements to align horizontally (like inline), while allowing you to set a desired width and height (like block).
 
-** Note **: You can change the default `display` property of any element to assign it the characteristics you desire.  However, these defaults are specified for a reason -- rather than change the `display` property, you may want to choose another type of element.
+**Note**: You can change the default `display` property of any element to assign it the characteristics you desire.  However, these defaults are specified for a reason -- rather than change the `display` property, you may want to choose another type of element.
 
 The amount of space taken up by each element is best explained by the [box-model](http://www.w3schools.com/css/css_boxmodel.asp).  Think of each HTML element as some content in a box.  The amount of space occupied by that box depends on:
 
@@ -170,7 +176,7 @@ While you can write media queries yourself, it is much more powerful to leverage
 
 Here is the table from bootstrap which specifies the pixels associated with each class:
 
-![bootstrap_table](imgs/bootstrap_table.png)
+![Table of bootstrap classes](imgs/bootstrap_table.png)
 
 For example, a div with class `.col-md-6` would take up 6 columns on a medium size screen.
 
