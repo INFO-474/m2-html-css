@@ -1,7 +1,7 @@
 # Module 2: HTML and CSS
 
 ## Overview
-In this course, we'll be building interactive data visualizations _on the web_.  While there is a pre-requisite of a web-programming course, this module provides a basic review of some foundational concepts.  If you're feeling at all rusty, I **strongly suggest** you fine-tune your HTML and CSS skill before moving forward.  This module will cover the following skills:
+In this course, we'll be building interactive data visualizations _on the web_.  While there is a pre-requisite of a web-programming course, this module provides a basic review of some foundational concepts.  If you're feeling at all rusty, I **strongly suggest** you fine-tune your HTML and CSS skills before moving forward.  This module will cover the following skills:
 
 - Basic page layout with HTML
 - Types of HTML elements
@@ -38,7 +38,7 @@ There are limitless resources on the web regarding web-programming (shocking), b
 
 ## HTML
 
-**H**yper**T**ext **M**arkup **L**anguage is a programming language for describing how to display web documents.  It uses `<tags>` to mark up plain text, and provide rendering instructions to a web-browser.  Even the most beautiful and complex data visualizations on the web are simply HTML elements arranged into what people perceive as charts, plots, and maps.
+**H**yper**T**ext **M**arkup **L**anguage is a programming language for describing how to display web documents.  It uses `<tags>` to mark up plaintext and provide rendering instructions to a web   browser.  Even the most beautiful and complex data visualizations on the web are simply HTML elements arranged into what people perceive as charts, plots, and maps.
 
 In an HTML document, you'll arrange different HTML elements into a tree structure which defines how your page is laid out. Your web-browser will parse the HTML you write and create a visual representation of that information known as the **D**ocument **O**bject **M**odule, or **DOM**. The DOM expresses your content as a series of objects which you will later learn how to manipulate, add, and remove from your page.
 
@@ -62,7 +62,7 @@ In order to render visual tags such as `circle` or `rect` elements, we'll need t
 </svg>
 ```
 
-All visual element that you want to render fall in the `<body>` section of your page.  You may want to read in other files, or set certain properties of you page, which would happen in the `<head>` section of your `.html` file.  Here is an example file:
+All visual elements that you want to render fall in the `<body>` section of your page.  You may want to read in other files, or set certain properties of you page, which would happen in the `<head>` section of your `.html` file.  Here is an example file:
 
 ```html
 <!-- This is a comment: your browser will not interpret it -->
@@ -99,7 +99,7 @@ The following image from w3schools shows how the `<head>` and `<body>` sections 
 
 ## CSS
 
-**C**ascading **S**tyle **S**heets provide you with a syntax for manipulating the styles with which HTML elements are rendered.  For example, you may want to specify the color, background-color, font-size, or font-face of an element.  As a best practice, CSS styles should be written in a separate `.css` file and read into your `.html` file in the `<head>` section of a document:
+**C**ascading **S**tyle **S**heets provide you with a syntax for manipulating the styles with which HTML elements are rendered.  For example, you may want to specify the `color`, `background-color`, `font-size`, or `font-face` of an element.  As a best practice, CSS styles should be written in a separate `.css` file and read into your `.html` file in the `<head>` section of a document:
 ```html
 <!DOCTYPE html>
 <html>
@@ -125,7 +125,7 @@ selector2 {
 ```
 
 ### Selectors
-In order to apply a style to an element, you must **select** that element on the page. This is a common task in web-development, and multiple libraries (`d3` and `jquery` included), follow these conventions.  Here are some basic ways in which you can select elements (way [more](http://www.w3schools.com/cssref/css_selectors.asp)):
+In order to apply a style to an element, you must **select** that element on the page. This is a common task in web development, and multiple libraries (`d3` and `jquery` included), follow these conventions.  Here are some basic ways in which you can select elements (way [more](http://www.w3schools.com/cssref/css_selectors.asp)):
 
 | Syntax  | Example | Selection |
 | ------------- | ------------- | ------------- |
@@ -136,7 +136,7 @@ In order to apply a style to an element, you must **select** that element on the
 | `element-type element-type`| `svg g` | Selects **all** `<g>` elements **inside of** `<svg>` elements |
 
 ### Arranging elements
-Elements naturally arrange themselves on the page based on the size of the elements, and if they naturally align with other elements.  
+Elements naturally arrange themselves on the page based on the size of the elements and if they naturally align with other elements.  
 
 >**Block level elements**: take up 100% of the width, and will not be in the same horizontal alignment as other elements.  Examples include `<div>`, `<h1>` - `<h6>`, and `<form>`.
 
@@ -148,7 +148,7 @@ Elements naturally arrange themselves on the page based on the size of the eleme
 
 The amount of space taken up by each element is best explained by the [box-model](http://www.w3schools.com/css/css_boxmodel.asp).  Think of each HTML element as some content in a box.  The amount of space occupied by that box depends on:
 
-- The amount of space between the content and the outsize of the box (`padding`)
+- The amount of space between the content and the outside of the box (`padding`)
 - The thickness of the box (`border`)
 - The desired distance between the box and other boxes (`margin`)
 
@@ -159,7 +159,7 @@ Manipulating these properties allows you to specify how your content should be a
 To practice your HTML and CSS skills, head over to [exercise-1](exercise-1).
 
 ### Frameworks
-Even for basic tasks, it makes sense to use a CSS framework to structure your code.  A CSS framework is a pre-written set of CSS files that apply styles to your elements.  They are particularly useful for making sites responsive based on screensize.  The most popular CSS framework on the web is [Bootstrap](http://getbootstrap.com/), which was developed by Twitter.  However, [Materialize](http://materializecss.com/) (by Google) appears to be gaining traction, and is a nice break from the ubiquity of default Bootstrap styles (you'll start to notice them everywhere once you use them).  To use a CSS framework, you simply read the file(s) into the `head` section of your `.html` file.  Note, some frameworks leverage `JavaScript` files for more advanced interactivity -- these are only required for certain elements (such as modals, which are like fancy dialog boxes) to render properly:
+Even for basic tasks, it makes sense to use a CSS framework to structure your code.  A CSS framework is a pre-written set of CSS files that apply styles to your elements.  They are particularly useful for making sites responsive based on screen size.  The most popular CSS framework on the web is [Bootstrap](http://getbootstrap.com/), which was developed by Twitter.  However, [Materialize](http://materializecss.com/) (by Google) appears to be gaining traction, and is a nice break from the ubiquity of default Bootstrap styles (you'll start to notice them everywhere once you use them).  To use a CSS framework, you simply read the file(s) into the `head` section of your `.html` file.  Note that some frameworks leverage `JavaScript` files for more advanced interactivity, although these are only required for certain elements (such as modals, which are like fancy dialog boxes) to render properly:
 
 ```html
 <head>
