@@ -1,6 +1,6 @@
 # Module 2: HTML and CSS
 
-## Overview
+## Overview of this Project
 In this course, we'll be building interactive data visualizations _on the web_.  While there is a pre-requisite of a web-programming course, this module provides a basic review of some foundational concepts.  If you're feeling at all rusty, I **strongly suggest** you fine-tune your HTML and CSS skill before moving forward.  This module will cover the following skills:
 
 - Basic page layout with HTML
