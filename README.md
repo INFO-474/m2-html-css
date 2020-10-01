@@ -16,6 +16,7 @@ In this course, we'll be building interactive data visualizations _on the web_. 
   - [HTML](#html)
   - [CSS](#css)
     - [Selectors](#selectors)
+    - [Add CSS](#add_css)
     - [Arranging elements](#arranging-elements)
     - [Frameworks](#frameworks)
     - [The Grid](#the-grid)
@@ -97,6 +98,9 @@ The following image from w3schools shows how the `<head>` and `<body>` sections 
 
 ![DOM tree structure](imgs/w3_htmltree.gif)
 
+**Web Browsers**
+Web browsers are applications that allow to view **HTML** documents from either your own computer or from any other computer connected to the Internet.
+
 ## CSS
 
 **C**ascading **S**tyle **S**heets provide you with a syntax for manipulating the styles with which HTML elements are rendered.  For example, you may want to specify the color, background-color, font-size, or font-face of an element.  As a best practice, CSS styles should be written in a separate `.css` file and read into your `.html` file in the `<head>` section of a document:
@@ -134,6 +138,88 @@ In order to apply a style to an element, you must **select** that element on the
 | `element-type`| `p` | Selects **all** paragraph (`<p>`) elements |
 | `:hover`| `a:hover` | Selects **all** links that are being hovered over |
 | `element-type element-type`| `svg g` | Selects **all** `<g>` elements **inside of** `<svg>` elements |
+
+### Add CSS
+**Three Ways to Insert CSS**
+
+There are three ways to inserting a style sheet:
+1. External CSS
+2. Internal CSS
+3. Inline CSS
+
+**1. External CSS**
+```html
+ <!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+```
+
+**mystyle.css**
+
+```css
+body{
+background-color: red;
+}
+h1{
+font-size: 28px;
+color: #00ff00;
+}
+
+
+```
+
+**2. Internal CSS**
+
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+  body{
+  background-color: lightblue;
+  font-size: 2rem;
+  }
+  
+ </style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html> 
+
+```
+
+**3. Inline CSS**
+
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1 style="color:#ff00ff; font-size: 26px">This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html> 
+
+```
 
 ### Arranging elements
 Elements naturally arrange themselves on the page based on the size of the elements, and if they naturally align with other elements.  
