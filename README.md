@@ -97,6 +97,9 @@ The following image from w3schools shows how the `<head>` and `<body>` sections 
 
 ![DOM tree structure](imgs/w3_htmltree.gif)
 
+**Web Browsers**
+Web browsers are applications that allow to view **HTML** documents from either your own computer or from any other computer connected to the Internet.
+
 ## CSS
 
 **C**ascading **S**tyle **S**heets provide you with a syntax for manipulating the styles with which HTML elements are rendered.  For example, you may want to specify the color, background-color, font-size, or font-face of an element.  As a best practice, CSS styles should be written in a separate `.css` file and read into your `.html` file in the `<head>` section of a document:
